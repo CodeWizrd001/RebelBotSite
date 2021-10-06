@@ -52,6 +52,8 @@ export default Vue.extend({})
     align-items: center;
     justify-content: center;
     height: 36vh;
+    min-height: 180px;
+    min-width: 250px;
     letter-spacing: 1px;
     z-index: 1;
     position: relative;
@@ -67,14 +69,14 @@ export default Vue.extend({})
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 18vh;
+    font-size: calc(max(18vh,70px));
     line-height: .75;
     margin: 2px 0;
   }
 
   @media screen and (max-width: 1000px) {
     h1 {
-      font-size: 12vw;
+      font-size: calc(max(12vh,70px));
     }
 
     .title {
